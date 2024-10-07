@@ -1,0 +1,49 @@
+.cwiczenie2_tabela {
+  border-collapse: collapse;
+}
+
+table {
+  display: inline-table;
+  margin: 1em;
+  border: solid 3px;
+}
+
+table th,
+table td {
+  border: solid 1px;
+}
+
+body {
+  background-color: rgb(237, 208, 113);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100px;
+}
+.square {
+  width: 100px;
+  height: 100px;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.image {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhhiTh4q_JrMYEO-EAnK1mYd0co0UNbYPnhg&s");
+  background-size: cover;
+  background-position: center;
+}
