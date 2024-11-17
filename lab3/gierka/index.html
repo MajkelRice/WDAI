@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/full_heart.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Zombiaki</title>
+    <audio id="bg-audio" src="sound/bgsoundtrack.mp3" loop="true"></audio>
+    <audio id="you-died-audio" src="sound/sad-music.mp3"></audio>
+    <audio id="heart-loss-audio" src="sound/classic_hurt.mp3"></audio>
+    <audio id="shot-audio" src="sound/pew.mp3"></audio>
+</head>
+<body>
+    <nav>
+        <div id="heart-container" class="heart-container">
+            <img class="heart" src="images/full_heart.png" alt="">
+            <img class="heart" src="images/full_heart.png" alt="">
+            <img class="heart" src="images/full_heart.png" alt="">
+        </div>
+        <div class="score-container">
+            <h1 id="score" class="score">00000</h2>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div id="inner-container" class="inner-container">
+                <div id="start-container" class="start-container">
+                    <h1">Welcome!</h1>
+                    <p>Wanna shoot some zombies??</p>
+                    <button id="start-button">Sure!</button>
+                </div>
+                <div id="lose-container" class="lose-container hidden">
+                    <p>You lost - womp womp</p>
+                    <h1">You scored: <h1 id="score-summary"></h1></h1>
+                    <p>Would you like to try again?</p>
+                    <button id="replay-button">Sure!</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="spawn-area">
+        <div id="zombie-container" class="zombie-container">
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <img id="custom-cursor" src="images/aim.png" alt="">
+</body>
+</html>

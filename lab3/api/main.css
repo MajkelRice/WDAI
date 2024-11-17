@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f7f9fc;
+  color: #333;
+}
+
+h2 {
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input,
+select {
+  padding: 8px;
+  margin: 10px 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#dataTable th,
+#dataTable td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+#dataTable th {
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+}
+
+#dataTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#dataTable img {
+  width: 50px;
+  height: auto;
+  border-radius: 3px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generator</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="generator.js"></script>
+  </head>
+  <body>
+    <div class="password-generator">
+      <textarea
+        name="max_char"
+        id="max-size"
+        placeholder="max char"
+        required
+      ></textarea>
+      <textarea
+        name="min_char"
+        id="min-size"
+        placeholder="min char"
+        required
+      ></textarea>
+      <label for="Capitals"> Capital letters</label>
+      <input type="checkbox" name="Capital" id="capital" />
+      <label for="Special">Special characters</label>
+      <input type="checkbox" name="Special" id="special" />
+      <button onclick="generate()">Generate password</button>
+    </div>
+  </body>
+</html>
