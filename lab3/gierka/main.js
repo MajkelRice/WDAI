@@ -10,7 +10,6 @@ const defaultZombieSpeed = 5;
 const sound = new Audio("sound/pew.mp3");
 let mousePos = { x: undefined, y: undefined };
 
-// Helper functions
 function getRandomFloat(range, decimals) {
   const str = (Math.random() * (range[1] - range[0]) + range[0]).toFixed(
     decimals
@@ -42,9 +41,7 @@ const getPosition = (el) => {
   y = rect.y + window.scrollY;
   return { x, y };
 };
-// End of helper functions
 
-// Handler functions
 const refillHearts = () => {
   $("#heart-container")
     .children()
@@ -123,9 +120,6 @@ const playShotSound = () => {
   click.play();
 };
 
-// End of handlers
-
-// Zombie logic
 const spawnZombie = (heightInt, sizeFloat, durationInt) => {
   let height = heightInt - (1 - sizeFloat) * 200;
   let newZombie = `<div style="
@@ -163,7 +157,6 @@ const zombiePassed = () => {
       }
     });
 };
-// End of zombie logic
 
 const shot = () => {
   if (totalScore < 0) {
@@ -191,7 +184,6 @@ const shot = () => {
   }
 };
 
-// Game state
 const startWithDelay = () => {
   $("#start-container").addClass("hidden");
   $("#inner-container").addClass("hidden");
@@ -220,7 +212,6 @@ const stopGame = () => {
   stopBgMusic();
   hideCrosshair();
 };
-// End game state
 
 $("#start-button").on("click", startWithDelay);
 $("#replay-button").on("click", startWithDelay);
